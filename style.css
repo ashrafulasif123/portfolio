@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+/* shared style START */
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.secondary-bg{
+    background-color: #FFF8F3;
+}
+
+.text-primary{
+    color: #FD6E0A;
+}
+
+.dark-1{
+    color: #181818;
+}
+
+.dark-2{
+    color: #474747;
+}
+
+.dark-3{
+    color: #757575;
+}
+
+.btn-primary{
+    color: #ffff;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 18px 36px;
+    background-color: #FD6E0A;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.section-description{
+    font-size: 18px;
+
+}
+/* shared style END */
+
+.header{
+    background-image: url('/images/developer.png'), url('/images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: left top, bottom right;
+    padding-top: 50px;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 226px;
+}
+
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
+}
+
+nav ul{
+    /* list-style-type: none; */
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 51px;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.banner{
+    margin: 0 38px 0 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content{
+    max-width: 585px;
+}
+
+.banner-greetings{
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.banner-title{
+    font-weight: 800;
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+
+.banner-desctiption{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.banner-profile-pic{
+    width: 584px;
+}
+
+.banner button{
+    margin-right: 30px;
+}
+
+/* main styles */
+main{
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+/* about section */
+.about{
+    border-radius: 10px;
+    padding: 130px 156px;
+    margin: 130px 0;
+}
+
+.section-title{
+    margin-bottom: 30px;
+}
+
+.about-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+.about-item{
+    text-align: center;
+}
+
+.item-title{
+    font-size: 20px;
+}
+
+.item-description{
+    font-weight: bold;
+    font-size: 20px;
+}
