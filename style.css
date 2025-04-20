@@ -14,10 +14,6 @@
 
 /* shared style START */
 
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
-}
 
 .text-center{
     text-align: center;
@@ -70,9 +66,9 @@
 .header{
     background-image: url('/images/developer.png'), url('/images/header_bg.png');
     background-repeat: no-repeat;
-    background-position: left top, bottom right;
-    padding-top: 50px;
-    height: 100vh;
+    background-position: left center, bottom right;
+    height: 837px;
+    position: relative;
 }
 
 nav{
@@ -80,6 +76,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     margin: 0 226px;
+    padding-top: 51px;
+    overflow: hidden;
 }
 
 .nav-title{
@@ -104,13 +102,14 @@ nav li a{
 }
 
 .banner{
-    margin: 0 38px 0 230px;
+    margin: 185px 38px 0 230px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .banner-content{
+    /* width: 100%; */
     max-width: 585px;
 }
 
@@ -132,6 +131,9 @@ nav li a{
 
 .banner-profile-pic{
     width: 584px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
 }
 
 .banner button{
@@ -148,22 +150,30 @@ main{
 /* about section */
 .about{
     border-radius: 10px;
-    padding: 130px 156px;
+    /* padding: 130px 156px; */
     margin: 130px 0;
-    border: 1px solid green;
     text-align: center;
 }
 
-.section-title{
-    
+.about-intro{
+    max-width: 827px;
+    padding: 100px 0;
+    margin: 0 auto;
+    /* border: 1px solid green; */
 }
 
 .about-items{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 15px;
+    /* padding: 0 15px; */
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
+.about-item {
+    /* flex: 1 1 250px; */
+  }
 
 .about-item{
     text-align: center;
@@ -252,6 +262,10 @@ main{
     padding: 130px 230px;
     display: flex;
     gap: 117px;
+ }
+
+.footer-container{
+    
 }
 
 .footer-item{
@@ -259,7 +273,7 @@ main{
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    max-width: 671px;
+    max-width: 660px;
 }
 
 .footer-social{
@@ -273,16 +287,24 @@ main{
 }
 
 .footer-form{
-    display: flex;
-    flex-direction: column;
     gap: 24px;
     width: 100%;
 }
 
-.footer-form input, textarea{
+.footer-form input{
     border: none;
-    width: 100%;
     padding: 18px 0 18px 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    /* display: block; */
+}
+
+.footer-form textarea{
+    border: none;
+    padding: 18px 0 18px 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
 }
 
 .footer-form input::placeholder{
